@@ -1299,19 +1299,6 @@ body {
         gap: 16px;
     }
 
-    .nav::before {
-        content: 'MENU';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 0.7rem;
-        font-weight: 700;
-        letter-spacing: 0.2em;
-        color: var(--border);
-        pointer-events: none;
-    }
-
     .nav-logo::before {
         display: none;
     }
