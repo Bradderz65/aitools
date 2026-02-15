@@ -493,8 +493,7 @@ body {
 }
 
 .tool-row:hover {
-    box-shadow: 8px 8px 0 var(--fg);
-    transform: translate(-4px, -4px);
+    background: var(--bg-alt);
 }
 
 .tool-rank {
