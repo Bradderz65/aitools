@@ -233,3 +233,53 @@ document.querySelectorAll('.tool-row, .deal-card, .prompt-pack').forEach(el => {
 });
 
 console.log('[TOOLS.AI] Ready. No bullshit, just results.');
+
+// Live Search Functionality
+const searchInput = document.getElementById('tool-search');
+const searchCount = document.getElementById('search-count');
+const toolRows = document.querySelectorAll('.tool-row');
+
+if (searchInput) {
+    searchInput.addEventListener('input', function() {
+        const query = this.value.toLowerCase().trim();
+        let visibleCount = 0;
+        
+        toolRows.forEach(row => {
+            const name = row.querySelector('h3')?.textContent.toLowerCase() || '';
+            const tagline = row.querySelector('.tool-tagline')?.textContent.toLowerCase() || '';
+            const tags = Array.from(row.querySelectorAll('.tag')).map(t => t.textContent.toLowerCase()).join(' ');
+            const category = row.dataset.category?.toLowerCase() || '';
+            
+            const match = name.includes(query) || 
+                         tagline.includes(query) || 
+                         tags.includes(query) || 
+                         category.includes(query);
+            
+            if (match) {
+                row.classList.remove('no-match');
+                // Only show if not filtered by category tab
+                const activeFilter = document.querySelector('.filter-tab.active')?.dataset.filter;
+                if (activeFilter === 'all' || row.dataset.category === activeFilter) {
+                    row.style.display = 'grid';
+                    visibleCount++;
+                }
+            } else {
+                row.classList.add('no-match');
+                row.style.display = 'none';
+            }
+        });
+        
+        if (searchCount) {
+            searchCount.textContent = visibleCount + (visibleCount === 1 ? ' tool' : ' tools');
+        }
+    });
+    
+    // Clear search when clicking filter tabs
+    document.querySelectorAll('.filter-tab').forEach(tab => {
+        tab.addEventListener('click', function() {
+            searchInput.value = '';
+            searchCount.textContent = '115 tools';
+            toolRows.forEach(row => row.classList.remove('no-match'));
+        });
+    });
+}
