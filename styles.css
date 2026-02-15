@@ -211,18 +211,32 @@ body {
 .nav-mobile {
     display: none;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 5px;
-    background: none;
-    border: none;
+    background: var(--card);
+    border: 2px solid var(--fg);
     cursor: pointer;
-    padding: 10px;
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    position: relative;
 }
 
 .nav-mobile span {
     display: block;
-    width: 24px;
+    width: 20px;
     height: 2px;
     background: var(--fg);
+    transition: all 0.2s;
+}
+
+.nav-mobile:hover {
+    background: var(--fg);
+}
+
+.nav-mobile:hover span {
+    background: var(--bg);
 }
 
 .hero {
@@ -1306,13 +1320,15 @@ body {
         display: none;
         position: absolute;
         top: 100%;
-        left: 0;
-        right: 0;
-        background: var(--bg);
+        left: 20px;
+        right: 20px;
+        background: var(--card);
         flex-direction: column;
         height: auto;
-        border: none;
-        border-bottom: 3px solid var(--fg);
+        border: 2px solid var(--fg);
+        box-shadow: 6px 6px 0 var(--fg);
+        margin-top: 8px;
+        overflow: hidden;
     }
 
     .nav-grid.active {
@@ -1320,17 +1336,62 @@ body {
     }
 
     .nav-item {
-        height: 50px;
-        border-bottom: 1px solid var(--border);
-        justify-content: center;
+        height: 56px;
+        border-bottom: 2px solid var(--border);
+        justify-content: flex-start;
+        padding: 0 24px;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+    }
+
+    .nav-item::before {
+        content: '';
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background: var(--accent);
+        margin-right: 16px;
+        transition: all 0.2s;
+    }
+
+    .nav-item:nth-child(2)::before { background: var(--accent-alt); }
+    .nav-item:nth-child(3)::before { background: var(--highlight); }
+    .nav-item:nth-child(4)::before { background: var(--fg); }
+
+    .nav-item:hover::before {
+        transform: scale(1.5);
     }
 
     .nav-item::after {
         display: none;
     }
 
+    .nav-item:hover {
+        background: var(--bg-alt);
+        color: var(--fg);
+    }
+
+    .nav-item.nav-item-1:hover,
+    .nav-item.nav-item-2:hover,
+    .nav-item.nav-item-3:hover,
+    .nav-item.nav-item-4:hover {
+        background: var(--bg-alt);
+    }
+
     .nav-status {
         display: none;
+    }
+
+    .nav-subscribe {
+        margin: 16px;
+        height: 48px;
+        justify-content: center;
+        background: var(--accent);
+    }
+
+    .nav-subscribe:hover {
+        background: var(--fg);
     }
 
     .nav-mobile {
