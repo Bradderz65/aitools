@@ -489,11 +489,6 @@ body {
     background: var(--card);
     border: 2px solid var(--fg);
     padding: 24px;
-    transition: all 0.2s;
-}
-
-.tool-row:hover {
-    background: var(--bg-alt);
 }
 
 .tool-rank {
