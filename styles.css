@@ -618,6 +618,37 @@ body {
     }
 }
 
+/* Tools Container */
+.tools-container {
+    margin: 24px 40px 0;
+    background: var(--card);
+    border: 2px solid var(--fg);
+    box-shadow: 6px 6px 0 var(--fg);
+    max-height: 70vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.tools-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.tools-container::-webkit-scrollbar-track {
+    background: var(--bg-alt);
+}
+
+.tools-container::-webkit-scrollbar-thumb {
+    background: var(--fg);
+    border: 2px solid var(--bg-alt);
+}
+
+@media (max-width: 768px) {
+    .tools-container {
+        margin: 20px 20px 0;
+        max-height: 65vh;
+    }
+}
+
 .tool-row.hidden {
     display: none !important;
 }
