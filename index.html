@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOOLS.AI — The Unboring AI Directory</title>
+    <meta name="description" content="Find AI tools that don't suck. Curated, reviewed, actually useful.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    
+    <nav class="nav">
+        <a href="/" class="nav-logo">
+            <span class="logo-bracket">[</span>
+            TOOLS<span class="logo-dot">.</span>AI
+            <span class="logo-bracket">]</span>
+        </a>
+        <div class="nav-grid">
+            <a href="#directory" class="nav-item nav-item-1">Directory</a>
+            <a href="#deals" class="nav-item nav-item-2">Deals</a>
+            <a href="#prompts" class="nav-item nav-item-3">Prompts</a>
+            <a href="#about" class="nav-item nav-item-4">About</a>
+            <button class="nav-subscribe" onclick="openNewsletter()">
+                <span class="subscribe-text">Subscribe</span>
+                <span class="subscribe-arrow">→</span>
+            </button>
+        </div>
+        <div class="nav-status">
+            <span class="status-dot"></span>
+            <span class="status-text">503 tools live</span>
+        </div>
+        <button class="nav-mobile" aria-label="Menu">
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <div class="hero-tagline">NO BULLSHIT AI TOOL REVIEWS</div>
+                <h1 class="hero-title">
+                    Find the <span class="highlight">tools</span> that actually <span class="highlight italic">work</span>
+                </h1>
+                <p class="hero-sub">We test hundreds of AI tools so you don't waste your money. Real reviews from real humans. No AI-generated fluff.</p>
+                <div class="hero-actions">
+                    <a href="#directory" class="btn-main">Browse 500+ Tools</a>
+                    <a href="#prompts" class="btn-ghost">Get Free Prompts</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-num">503</span>
+                        <span class="stat-label">Tools Listed</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-num">12.4K</span>
+                        <span class="stat-label">Monthly Readers</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-num">$340K</span>
+                        <span class="stat-label">Saved Our Readers</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-card card-1">
+                    <div class="card-icon">🧠</div>
+                    <div class="card-text">Claude</div>
+                    <div class="card-rating">★★★★★</div>
+                </div>
+                <div class="visual-card card-2">
+                    <div class="card-icon">🔷</div>
+                    <div class="card-text">DeepSeek</div>
+                    <div class="card-rating">★★★★★</div>
+                </div>
+                <div class="visual-card card-3">
+                    <div class="card-icon">🎬</div>
+                    <div class="card-text">Sora 2</div>
+                    <div class="card-rating">★★★★★</div>
+                </div>
+                <div class="visual-card card-4">
+                    <div class="card-icon">🎨</div>
+                    <div class="card-text">Flux 2</div>
+                    <div class="card-rating">★★★★★</div>
+                </div>
+                <div class="visual-orbit"></div>
+            </div>
+        </div>
+        <div class="hero-marquee">
+            <div class="marquee-track">
+                <span>WRITING</span>
+                <span>•</span>
+                <span>CODING</span>
+                <span>•</span>
+                <span>DESIGN</span>
+                <span>•</span>
+                <span>MARKETING</span>
+                <span>•</span>
+                <span>VIDEO</span>
+                <span>•</span>
+                <span>AUDIO</span>
+                <span>•</span>
+                <span>PRODUCTIVITY</span>
+                <span>•</span>
+                <span>RESEARCH</span>
+                <span>•</span>
+                <span>ANALYTICS</span>
+                <span>•</span>
+                <span>CHATBOTS</span>
+                <span>•</span>
+                <span>IMAGE GEN</span>
+                <span>•</span>
+                <span>VOICE AI</span>
+                <span>•</span>
+                <span>DATA</span>
+                <span>•</span>
+                <span>AUTOMATION</span>
+                <span>•</span>
+                <span>SEO</span>
+                <span>•</span>
+                <span>SALES</span>
+                <span>•</span>
+                <span>EMAIL</span>
+                <span>•</span>
+                <span>SOCIAL</span>
+                <span>•</span>
+                <span>PRESENTATIONS</span>
+                <span>•</span>
+                <span>TRANSLATION</span>
+                <span>•</span>
+                <span>MEETING AI</span>
+                <span>•</span>
+                <span>WRITING</span>
+                <span>•</span>
+                <span>CODING</span>
+                <span>•</span>
+                <span>DESIGN</span>
+                <span>•</span>
+                <span>MARKETING</span>
+                <span>•</span>
+                <span>VIDEO</span>
+                <span>•</span>
+                <span>AUDIO</span>
+                <span>•</span>
+                <span>PRODUCTIVITY</span>
+                <span>•</span>
+                <span>RESEARCH</span>
+                <span>•</span>
+                <span>ANALYTICS</span>
+                <span>•</span>
+                <span>CHATBOTS</span>
+                <span>•</span>
+                <span>IMAGE GEN</span>
+                <span>•</span>
+                <span>VOICE AI</span>
+                <span>•</span>
+                <span>DATA</span>
+                <span>•</span>
+                <span>AUTOMATION</span>
+                <span>•</span>
+                <span>SEO</span>
+                <span>•</span>
+                <span>SALES</span>
+                <span>•</span>
+                <span>EMAIL</span>
+                <span>•</span>
+                <span>SOCIAL</span>
+                <span>•</span>
+                <span>PRESENTATIONS</span>
+                <span>•</span>
+                <span>TRANSLATION</span>
+                <span>•</span>
+                <span>MEETING AI</span>
+                <span>•</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="directory" class="directory">
+        <div class="section-header">
+            <div class="header-left">
+                <span class="section-number">01</span>
+                <h2>Tool Directory</h2>
+            </div>
+            <div class="header-right">
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">All</button>
+                    <button class="filter-tab" data-filter="writing">Writing</button>
+                    <button class="filter-tab" data-filter="coding">Coding</button>
+                    <button class="filter-tab" data-filter="design">Images/Video</button>
+                    <button class="filter-tab" data-filter="audio">Audio/Music</button>
+                    <button class="filter-tab" data-filter="productivity">Productivity</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="tools-list">
+            <article class="tool-row" data-category="writing">
+                <div class="tool-rank">#1</div>
+                <div class="tool-main">
+                    <div class="tool-identity">
+                        <span class="tool-emoji">🧠</span>
+                        <div>
+                            <h3>Claude Pro</h3>
+                            <p class="tool-tagline">Reddit's favorite for long-form. 200K context destroys GPT for docs.</p>
+                        </div>
+                    </div>
+                    <div class="tool-tags">
+                        <span class="tag">Writing</span>
+                        <span class="tag">Coding</span>
+                        <span class="tag">Research</span>
+                    </div>
+                    <div class="tool-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">3,891</span>
+                    </div>
+                    <div class="tool-price">
+                        <span class="price">$20</span>
+                        <span class="period">/mo</span>
+                    </div>
+                </div>
+                <a href="https://anthropic.com/claude" target="_blank" rel="noopener" class="tool-action" data-tool="claude">
+                    Try Free →
+                </a>
+            </article>
+
+            <article class="tool-row" data-category="productivity">
+                <div class="tool-rank">#2</div>
+                <div class="tool-main">
+                    <div class="tool-identity">
+                        <span class="tool-emoji">🎧</span>
+                        <div>
+                            <h3>NotebookLM</h3>
+                            <p class="tool-tagline">Google's hidden gem. Turns any PDF into a podcast. Reddit is obsessed.</p>
+                        </div>
+                    </div>
+                    <div class="tool-tags">
+                        <span class="tag">Research</span>
+                        <span class="tag">Audio</span>
+                        <span class="tag">Docs</span>
+                    </div>
+                    <div class="tool-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">2,847</span>
+                    </div>
+                    <div class="tool-price">
+                        <span class="price">FREE</span>
+                    </div>
+                </div>
+                <a href="https://notebooklm.google.com" target="_blank" rel="noopener" class="tool-action" data-tool="notebooklm">
+                    Try Free →
+                </a>
+            </article>
+
+            <article class="tool-row" data-category="design">
+                <div class="tool-rank">#3</div>
+                <div class="tool-main">
+                    <div class="tool-identity">
+                        <span class="tool-emoji">🎨</span>
+                        <div>
+                            <h3>Flux 2 (Black Forest Labs)</h3>
+                            <p class="tool-tagline">The new king of image gen. Beats Midjourney on text and realism.</p>
+                        </div>
+                    </div>
+                    <div class="tool-tags">
+                        <span class="tag">Images</span>
+                        <span class="tag">Art</span>
+                        <span class="tag">Text</span>
+                    </div>
+                    <div class="tool-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">1,543</span>
+                    </div>
+                    <div class="tool-price">
+                        <span class="price">$10</span>
+                        <span class="period">/mo</span>
+                    </div>
+                </div>
+                <a href="https://blackforestlabs.ai" target="_blank" rel="noopener" class="tool-action" data-tool="flux">
+                    Try Free →
+                </a>
+            </article>
+
+            <article class="tool-row" data-category="coding">
+                <div class="tool-rank">#4</div>
+                <div class="tool-main">
+                    <div class="tool-identity">
+                        <span class="tool-emoji">⚡</span>
+                        <div>
+                            <h3>Cursor</h3>
+                            <p class="tool-tagline">Reddit devs swear by it. AI editor that actually gets your codebase.</p>
+                        </div>
+                    </div>
+                    <div class="tool-tags">
+                        <span class="tag">Coding</span>
+                        <span class="tag">Dev Tools</span>
+                        <span class="tag">IDE</span>
+                    </div>
+                    <div class="tool-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">4,218</span>
+                    </div>
+                    <div class="tool-price">
+                        <span class="price">$20</span>
+                        <span class="period">/mo</span>
+                    </div>
+                </div>
+                <a href="https://cursor.sh" target="_blank" rel="noopener" class="tool-action" data-tool="cursor">
+                    Try Free →
+                </a>
+            </article>
+
+            <article class="tool-row" data-category="design">
+                <div class="tool-rank">#5</div>
+                <div class="tool-main">
+                    <div class="tool-identity">
+                        <span class="tool-emoji">🎬</span>
+                        <div>
+                            <h3>Seedance</h3>
+                            <p class="tool-tagline">ByteDance's video generator. Cinematic quality. Sora competitor.</p>
+                        </div>
+                    </div>
+                    <div class="tool-tags">
+                        <span class="tag">Video</span>
+                        <span class="tag">Animation</span>
+                        <span class="tag">Motion</span>
+                    </div>
+                    <div class="tool-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">892</span>
+                    </div>
+                    <div class="tool-price">
+                        <span class="price">$15</span>
+                        <span class="period">/mo</span>
+                    </div>
+                </div>
+                <a href="https://seedance.ai" target="_blank" rel="noopener" class="tool-action" data-tool="seedance">
+                    Try Free →
+                </a>
+            </article>
+
+            <article class="tool-row" data-category="productivity">
+                <div class="tool-rank">#6</div>
+                <div class="tool-main">
+                    <div class="tool-identity">
+                        <span class="tool-emoji">🔍</span>
+                        <div>
+                            <h3>Perplexity Pro</h3>
+                            <p class="tool-tagline">AI search that actually cites sources. Reddit researchers love it.</p>
+                        </div>
+                    </div>
+                    <div class="tool-tags">
+                        <span class="tag">Research</span>
+                        <span class="tag">Search</span>
+                        <span class="tag">Citations</span>
+                    </div>
+                    <div class="tool-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">3,156</span>
+                    </div>
+                    <div class="tool-price">
+                        <span class="price">$20</span>
+                        <span class="period">/mo</span>
+                    </div>
+                </div>
+                <a href="https://perplexity.ai" target="_blank" rel="noopener" class="tool-action" data-tool="perplexity">
+                    Try Free →
+                </a>
+            </article>
+
+            <article class="tool-row" data-category="design">
+                <div class="tool-rank">#7</div>
+                <div class="tool-main">
+                    <div class="tool-identity">
+                        <span class="tool-emoji">🎥</span>
+                        <div>
+                            <h3>Kling AI</h3>
+                            <p class="tool-tagline">Chinese video gen that shocked everyone. 2min clips, insane quality.</p>
+                        </div>
+                    </div>
+                    <div class="tool-tags">
+                        <span class="tag">Video</span>
+                        <span class="tag">Long-form</span>
+                        <span class="tag">Realistic</span>
+                    </div>
+                    <div class="tool-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">1,247</span>
+                    </div>
+                    <div class="tool-price">
+                        <span class="price">$10</span>
+                        <span class="period">/mo</span>
+                    </div>
+                </div>
+                <a href="https://klingai.com" target="_blank" rel="noopener" class="tool-action" data-tool="kling">
+                    Try Free →
+                </a>
+            </article>
+
+            <article class="tool-row" data-category="audio">
+                <div class="tool-rank">#8</div>
+                <div class="tool-main">
+                    <div class="tool-identity">
+                        <span class="tool-emoji">🎵</span>
+                        <div>
+                            <h3>Suno</h3>
+                            <p class="tool-tagline">Generate full songs with vocals. Reddit's favorite AI music tool.</p>
+                        </div>
+                    </div>
+                    <div class="tool-tags">
+                        <span class="tag">Music</span>
+                        <span class="tag">Audio</span>
+                        <span class="tag">Vocals</span>
+                    </div>
+                    <div class="tool-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">2,891</span>
+                    </div>
+                    <div class="tool-price">
+                        <span class="price">$10</span>
+                        <span class="period">/mo</span>
+                    </div>
+                </div>
+                <a href="https://suno.ai" target="_blank" rel="noopener" class="tool-action" data-tool="suno">
+                    Try Free →
+                </a>
+            </article>
+
+            <article class="tool-row" data-category="design">
+                <div class="tool-rank">#9</div>
+                <div class="tool-main">
+                    <div class="tool-identity">
+                        <span class="tool-emoji">🖼️</span>
+                        <div>
+                            <h3>Seedream</h3>
+                            <p class="tool-tagline">ByteDance's image gen. Photorealistic portraits. Free tier available.</p>
+                        </div>
+                    </div>
+                    <div class="tool-tags">
+                        <span class="tag">Images</span>
+                        <span class="tag">Portraits</span>
+                        <span class="tag">Realistic</span>
+                    </div>
+                    <div class="tool-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="count">756</span>
+                    </div>
+                    <div class="tool-price">
+                        <span class="price">FREE</span>
+                    </div>
+                </div>
+                <a href="https://seedream.ai" target="_blank" rel="noopener" class="tool-action" data-tool="seedream">
+                    Try Free →
+                </a>
+            </article>
+
+            <article class="tool-row" data-category="audio">
+                <div class="tool-rank">#10</div>
+                <div class="tool-main">
+                    <div class="tool-identity">
+                        <span class="tool-emoji">🎙️</span>
+                        <div>
+                            <h3>ElevenLabs</h3>
+                            <p class="tool-tagline">Clone any voice in seconds. The standard for AI audio. Dubbing is insane.</p>
+                        </div>
+                    </div>
+                    <div class="tool-tags">
+                        <span class="tag">Voice</span>
+                        <span class="tag">Dubbing</span>
+                        <span class="tag">TTS</span>
+                    </div>
+                    <div class="tool-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">3,421</span>
+                    </div>
+                    <div class="tool-price">
+                        <span class="price">$5</span>
+                        <span class="period">/mo</span>
+                    </div>
+                </div>
+                <a href="https://elevenlabs.io" target="_blank" rel="noopener" class="tool-action" data-tool="elevenlabs">
+                    Try Free →
+                </a>
+            </article>
+
+            <article class="tool-row" data-category="productivity">
+                <div class="tool-rank">#11</div>
+                <div class="tool-main">
+                    <div class="tool-identity">
+                        <span class="tool-emoji">📹</span>
+                        <div>
+                            <h3>Fathom</h3>
+                            <p class="tool-tagline">Free AI meeting notes. Zoom/Meet/Teams. Reddit's top pick for meetings.</p>
+                        </div>
+                    </div>
+                    <div class="tool-tags">
+                        <span class="tag">Meetings</span>
+                        <span class="tag">Notes</span>
+                        <span class="tag">Transcription</span>
+                    </div>
+                    <div class="tool-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">1,892</span>
+                    </div>
+                    <div class="tool-price">
+                        <span class="price">FREE</span>
+                    </div>
+                </div>
+                <a href="https://fathom.video" target="_blank" rel="noopener" class="tool-action" data-tool="fathom">
+                    Try Free →
+                </a>
+            </article>
+
+            <article class="tool-row" data-category="design">
+                <div class="tool-rank">#12</div>
+                <div class="tool-main">
+                    <div class="tool-identity">
+                        <span class="tool-emoji">🍌</span>
+                        <div>
+                            <h3>Nano Banana Pro</h3>
+                            <p class="tool-tagline">Lightning fast image gen. Runs locally. Privacy-focused creators swear by it.</p>
+                        </div>
+                    </div>
+                    <div class="tool-tags">
+                        <span class="tag">Images</span>
+                        <span class="tag">Local</span>
+                        <span class="tag">Private</span>
+                    </div>
+                    <div class="tool-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="count">634</span>
+                    </div>
+                    <div class="tool-price">
+                        <span class="price">FREE</span>
+                    </div>
+                </div>
+                <a href="https://github.com/nanobananapro" target="_blank" rel="noopener" class="tool-action" data-tool="nanobanana">
+                    Download →
+                </a>
+            </article>
+
+            <article class="tool-row" data-category="productivity">
+                <div class="tool-rank">#13</div>
+                <div class="tool-main">
+                    <div class="tool-identity">
+                        <span class="tool-emoji">⚡</span>
+                        <div>
+                            <h3>n8n</h3>
+                            <p class="tool-tagline">Self-hosted automation. Reddit's Zapier alternative. AI agents included.</p>
+                        </div>
+                    </div>
+                    <div class="tool-tags">
+                        <span class="tag">Automation</span>
+                        <span class="tag">Agents</span>
+                        <span class="tag">Workflow</span>
+                    </div>
+                    <div class="tool-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">2,156</span>
+                    </div>
+                    <div class="tool-price">
+                        <span class="price">FREE</span>
+                    </div>
+                </div>
+                <a href="https://n8n.io" target="_blank" rel="noopener" class="tool-action" data-tool="n8n">
+                    Try Free →
+                </a>
+            </article>
+
+            <article class="tool-row" data-category="design">
+                <div class="tool-rank">#14</div>
+                <div class="tool-main">
+                    <div class="tool-identity">
+                        <span class="tool-emoji">🎬</span>
+                        <div>
+                            <h3>Sora 2</h3>
+                            <p class="tool-tagline">OpenAI's video generator. Finally public. 4K output. Mind-bending.</p>
+                        </div>
+                    </div>
+                    <div class="tool-tags">
+                        <span class="tag">Video</span>
+                        <span class="tag">4K</span>
+                        <span class="tag">Cinematic</span>
+                    </div>
+                    <div class="tool-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">4,521</span>
+                    </div>
+                    <div class="tool-price">
+                        <span class="price">$20</span>
+                        <span class="period">/mo</span>
+                    </div>
+                </div>
+                <a href="https://openai.com/sora" target="_blank" rel="noopener" class="tool-action" data-tool="sora">
+                    Try Free →
+                </a>
+            </article>
+
+            <article class="tool-row" data-category="design">
+                <div class="tool-rank">#15</div>
+                <div class="tool-main">
+                    <div class="tool-identity">
+                        <span class="tool-emoji">✨</span>
+                        <div>
+                            <h3>Ideogram 2.0</h3>
+                            <p class="tool-tagline">Best text-in-images. Posters, logos, graphics. Beats everyone on typography.</p>
+                        </div>
+                    </div>
+                    <div class="tool-tags">
+                        <span class="tag">Images</span>
+                        <span class="tag">Text</span>
+                        <span class="tag">Design</span>
+                    </div>
+                    <div class="tool-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">1,892</span>
+                    </div>
+                    <div class="tool-price">
+                        <span class="price">$8</span>
+                        <span class="period">/mo</span>
+                    </div>
+                </div>
+                <a href="https://ideogram.ai" target="_blank" rel="noopener" class="tool-action" data-tool="ideogram">
+                    Try Free →
+                </a>
+            </article>
+
+            <article class="tool-row" data-category="writing">
+                <div class="tool-rank">#16</div>
+                <div class="tool-main">
+                    <div class="tool-identity">
+                        <span class="tool-emoji">🤖</span>
+                        <div>
+                            <h3>ChatGPT Pro</h3>
+                            <p class="tool-tagline">Still the all-rounder. GPT-5 access. Best for general tasks.</p>
+                        </div>
+                    </div>
+                    <div class="tool-tags">
+                        <span class="tag">Writing</span>
+                        <span class="tag">Coding</span>
+                        <span class="tag">General</span>
+                    </div>
+                    <div class="tool-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">5,234</span>
+                    </div>
+                    <div class="tool-price">
+                        <span class="price">$20</span>
+                        <span class="period">/mo</span>
+                    </div>
+                </div>
+                <a href="https://chat.openai.com" target="_blank" rel="noopener" class="tool-action" data-tool="chatgpt">
+                    Try Free →
+                </a>
+            </article>
+
+            <article class="tool-row" data-category="writing">
+                <div class="tool-rank">#17</div>
+                <div class="tool-main">
+                    <div class="tool-identity">
+                        <span class="tool-emoji">🔷</span>
+                        <div>
+                            <h3>DeepSeek</h3>
+                            <p class="tool-tagline">Chinese model that beat GPT-4 for $0.14/million tokens. Open source. Reddit went crazy.</p>
+                        </div>
+                    </div>
+                    <div class="tool-tags">
+                        <span class="tag">Coding</span>
+                        <span class="tag">Reasoning</span>
+                        <span class="tag">Open Source</span>
+                    </div>
+                    <div class="tool-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">4,892</span>
+                    </div>
+                    <div class="tool-price">
+                        <span class="price">$0.14</span>
+                        <span class="period">/1M tokens</span>
+                    </div>
+                </div>
+                <a href="https://deepseek.com" target="_blank" rel="noopener" class="tool-action" data-tool="deepseek">
+                    Try Free →
+                </a>
+            </article>
+
+            <article class="tool-row" data-category="writing">
+                <div class="tool-rank">#18</div>
+                <div class="tool-main">
+                    <div class="tool-identity">
+                        <span class="tool-emoji">🌙</span>
+                        <div>
+                            <h3>Moonshot AI (Kimi)</h3>
+                            <p class="tool-tagline">Chinese long-context king. 200K+ context. Free tier crushes paid alternatives.</p>
+                        </div>
+                    </div>
+                    <div class="tool-tags">
+                        <span class="tag">Long-context</span>
+                        <span class="tag">Research</span>
+                        <span class="tag">Docs</span>
+                    </div>
+                    <div class="tool-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">1,547</span>
+                    </div>
+                    <div class="tool-price">
+                        <span class="price">FREE</span>
+                    </div>
+                </div>
+                <a href="https://kimi.moonshot.cn" target="_blank" rel="noopener" class="tool-action" data-tool="moonshot">
+                    Try Free →
+                </a>
+            </article>
+
+            <article class="tool-row" data-category="writing">
+                <div class="tool-rank">#19</div>
+                <div class="tool-main">
+                    <div class="tool-identity">
+                        <span class="tool-emoji">🤖</span>
+                        <div>
+                            <h3>Z.ai (GLM)</h3>
+                            <p class="tool-tagline">Zhipu AI's GLM models. Chinese alternative to GPT. Bilingual powerhouse.</p>
+                        </div>
+                    </div>
+                    <div class="tool-tags">
+                        <span class="tag">Bilingual</span>
+                        <span class="tag">Chinese</span>
+                        <span class="tag">Enterprise</span>
+                    </div>
+                    <div class="tool-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="count">892</span>
+                    </div>
+                    <div class="tool-price">
+                        <span class="price">FREE</span>
+                    </div>
+                </div>
+                <a href="https://zhipuai.cn" target="_blank" rel="noopener" class="tool-action" data-tool="zhipu">
+                    Try Free →
+                </a>
+            </article>
+
+            <article class="tool-row" data-category="productivity">
+                <div class="tool-rank">#20</div>
+                <div class="tool-main">
+                    <div class="tool-identity">
+                        <span class="tool-emoji">🔮</span>
+                        <div>
+                            <h3>Grok 2</h3>
+                            <p class="tool-tagline">X's AI assistant. Uncensored. Real-time Twitter data. Witty personality.</p>
+                        </div>
+                    </div>
+                    <div class="tool-tags">
+                        <span class="tag">Uncensored</span>
+                        <span class="tag">Real-time</span>
+                        <span class="tag">Twitter</span>
+                    </div>
+                    <div class="tool-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">2,341</span>
+                    </div>
+                    <div class="tool-price">
+                        <span class="price">$16</span>
+                        <span class="period">/mo</span>
+                    </div>
+                </div>
+                <a href="https://x.com/i/grok" target="_blank" rel="noopener" class="tool-action" data-tool="grok">
+                    Try Free →
+                </a>
+            </article>
+        </div>
+
+        <div class="load-more">
+            <button class="btn-load">Load More Tools ↓</button>
+        </div>
+    </section>
+
+    <section id="deals" class="deals">
+        <div class="deals-wrapper">
+            <div class="deals-header">
+                <span class="section-number">02</span>
+                <h2>Exclusive Deals</h2>
+                <p>Discounts we negotiated just for you. You're welcome.</p>
+            </div>
+            <div class="deals-grid">
+                <div class="deal-card">
+                    <div class="deal-badge">-25%</div>
+                    <div class="deal-content">
+                        <span class="deal-emoji">✍️</span>
+                        <h3>Jasper AI</h3>
+                        <p>25% off your first 3 months</p>
+                        <div class="deal-code">
+                            <span>TOOLS25</span>
+                            <button onclick="copyCode('TOOLS25')">Copy</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge">-20%</div>
+                    <div class="deal-content">
+                        <span class="deal-emoji">📊</span>
+                        <h3>Notion AI</h3>
+                        <p>20% off annual plans</p>
+                        <div class="deal-code">
+                            <span>NOTION20</span>
+                            <button onclick="copyCode('NOTION20')">Copy</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge">FREE</div>
+                    <div class="deal-content">
+                        <span class="deal-emoji">🎨</span>
+                        <h3>Canva Pro</h3>
+                        <p>30 days free trial</p>
+                        <div class="deal-code">
+                            <span>CANVA30</span>
+                            <button onclick="copyCode('CANVA30')">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="prompts" class="prompts">
+        <div class="prompts-container">
+            <div class="prompts-intro">
+                <span class="section-number">03</span>
+                <h2>AI Prompt Packs</h2>
+                <p class="prompts-subtitle">Copy-paste prompts that get real results. Created by humans, tested on AI.</p>
+            </div>
+            
+            <div class="prompts-products">
+                <div class="prompt-pack">
+                    <div class="pack-header">
+                        <span class="pack-emoji">📝</span>
+                        <div class="pack-meta">
+                            <span class="pack-type">BESTSELLER</span>
+                            <span class="pack-count">200+ prompts</span>
+                        </div>
+                    </div>
+                    <h3>Content Creator Pack</h3>
+                    <p>Blog posts, social media, emails, SEO content. Everything you need to create content at scale.</p>
+                    <ul class="pack-features">
+                        <li>Blog post generators</li>
+                        <li>Instagram captions</li>
+                        <li>Twitter threads</li>
+                        <li>Email sequences</li>
+                        <li>SEO-optimized articles</li>
+                    </ul>
+                    <div class="pack-pricing">
+                        <span class="pack-original">$29</span>
+                        <span class="pack-price">$9</span>
+                    </div>
+                    <button class="pack-buy" onclick="buyPack('content')">
+                        <span>Buy Now</span>
+                        <span class="pack-arrow">→</span>
+                    </button>
+                </div>
+
+                <div class="prompt-pack featured">
+                    <div class="pack-featured-badge">★ FEATURED</div>
+                    <div class="pack-header">
+                        <span class="pack-emoji">💰</span>
+                        <div class="pack-meta">
+                            <span class="pack-type">MOST POPULAR</span>
+                            <span class="pack-count">150+ prompts</span>
+                        </div>
+                    </div>
+                    <h3>Business & Marketing</h3>
+                    <p>Business plans, marketing strategies, sales copy, growth tactics. For entrepreneurs who mean business.</p>
+                    <ul class="pack-features">
+                        <li>Business plan templates</li>
+                        <li>Marketing strategy prompts</li>
+                        <li>Sales email generators</li>
+                        <li>Competitor analysis</li>
+                        <li>Growth hacking tactics</li>
+                    </ul>
+                    <div class="pack-pricing">
+                        <span class="pack-original">$49</span>
+                        <span class="pack-price">$19</span>
+                    </div>
+                    <button class="pack-buy" onclick="buyPack('business')">
+                        <span>Buy Now</span>
+                        <span class="pack-arrow">→</span>
+                    </button>
+                </div>
+
+                <div class="prompt-pack">
+                    <div class="pack-header">
+                        <span class="pack-emoji">💻</span>
+                        <div class="pack-meta">
+                            <span class="pack-type">FOR DEVS</span>
+                            <span class="pack-count">180+ prompts</span>
+                        </div>
+                    </div>
+                    <h3>Developer Pack</h3>
+                    <p>Code generation, debugging, documentation, system design. Write better code faster.</p>
+                    <ul class="pack-features">
+                        <li>Code generators</li>
+                        <li>Debug assistants</li>
+                        <li>Documentation templates</li>
+                        <li>Code review prompts</li>
+                        <li>Architecture patterns</li>
+                    </ul>
+                    <div class="pack-pricing">
+                        <span class="pack-original">$39</span>
+                        <span class="pack-price">$14</span>
+                    </div>
+                    <button class="pack-buy" onclick="buyPack('developer')">
+                        <span>Buy Now</span>
+                        <span class="pack-arrow">→</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="prompts-guarantee">
+                <span class="guarantee-icon">🔒</span>
+                <span>30-day money-back guarantee. Instant download. Works with ChatGPT, Claude, Gemini, and others.</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-left">
+                <span class="section-number">04</span>
+                <h2>Why We Exist</h2>
+                <div class="about-text">
+                    <p class="about-lead">We got tired of fake AI tool reviews written by chatbots.</p>
+                    <p>So we built what we wanted: a directory run by actual humans who test every tool. We spend our own money on subscriptions. We write honest reviews. We tell you when something sucks.</p>
+                    <p>No sponsored placements. No AI-generated content. No bullshit.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="about-stat">
+                        <span class="about-stat-num">503</span>
+                        <span class="about-stat-label">Tools tested</span>
+                    </div>
+                    <div class="about-stat">
+                        <span class="about-stat-num">47</span>
+                        <span class="about-stat-label">Tools we recommend</span>
+                    </div>
+                    <div class="about-stat">
+                        <span class="about-stat-num">0</span>
+                        <span class="about-stat-label">Paid placements</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-right">
+                <div class="about-card">
+                    <div class="about-card-header">
+                        <span class="about-card-icon">📧</span>
+                        <h3>Weekly Newsletter</h3>
+                    </div>
+                    <p>AI tools worth your time. New finds. Honest reviews. No spam.</p>
+                    <form class="newsletter-inline" id="newsletter-form">
+                        <input type="email" placeholder="you@email.com" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <span class="newsletter-note">🎁 Get "50 GPT Prompts for Productivity" free</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="/" class="footer-logo">
+                    <span class="logo-bracket">[</span>
+                    TOOLS<span class="logo-dot">.</span>AI
+                    <span class="logo-bracket">]</span>
+                </a>
+                <p>The unboring AI tool directory. Made with 🧠 by humans.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Directory</h4>
+                    <a href="#">All Tools</a>
+                    <a href="#">Writing</a>
+                    <a href="#">Coding</a>
+                    <a href="#">Design</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <a href="#">Prompt Packs</a>
+                    <a href="#">Free Prompts</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Newsletter</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Affiliate Disclosure</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 TOOLS.AI. Some links are affiliate links. We earn commissions at no cost to you. That's how we keep the lights on.</p>
+        </div>
+    </footer>
+
+    <div class="modal" id="checkout-modal">
+        <div class="modal-backdrop" onclick="closeModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
