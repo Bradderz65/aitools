@@ -212,6 +212,22 @@ if (navMobile) {
     });
 }
 
+// Close mobile menu when clicking a nav item
+document.querySelectorAll('.nav-item').forEach(item => {
+    item.addEventListener('click', () => {
+        if (navGrid) {
+            navGrid.classList.remove('active');
+        }
+    });
+});
+
+// Close mobile menu when clicking subscribe button
+document.querySelector('.nav-subscribe')?.addEventListener('click', () => {
+    if (navGrid) {
+        navGrid.classList.remove('active');
+    }
+});
+
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeModal();
 });
